@@ -71,29 +71,29 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
-  padding: 200px 0;
+  padding: 20px 0;
 }
 @media (max-width: 1199px) {
   .section_gap {
-    padding: 80px 0;
+    padding: 20px 0;
   }
 }
 
 .section_gap_top {
-  padding-top: 200px;
+  padding-top: 20px;
 }
 @media (max-width: 1199px) {
   .section_gap_top {
-    padding-top: 80px;
+    padding-top: 20px;
   }
 }
 
 .section_gap_bottom {
-  padding-bottom: 200px;
+  padding-bottom: 20px;
 }
 @media (max-width: 1199px) {
   .section_gap_bottom {
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
 }
 
@@ -419,7 +419,6 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  background: url(/img/banner/home-banner.png) no-repeat top center;
   background-position: center;
   background-size: cover;
 }
@@ -3752,8 +3751,8 @@ h6 {
   /* Footer Area css
   ============================================================================================ */
   .footer_area {
-    padding-top: 80px !important;
-    padding-bottom: 80px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
     background-image: none !important;
     background-color: #fcf8ff;
   }
@@ -3943,8 +3942,8 @@ h6 {
   /* End Home Banner Area css
   ============================================================================================ */
   .section_gap {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .main_title h2 {
@@ -4061,8 +4060,9 @@ h6 {
 }
 
 .footer_area {
-  padding: 120px 0;
+  padding: 20px 0;
   position: relative;
+  background-color: #f0f8ff;
 }
 .footer_area:before {
   content: "";

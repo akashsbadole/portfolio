@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <>
@@ -7,9 +10,9 @@ const Footer = () => {
             <div className="col-lg-12">
               <div className="footer_top flex-column">
                 <div className="footer_logo">
-                  <a href="#">
-                    <img src="img/logo.png" alt="" />
-                  </a>
+                  <Link href="/">
+                    <Image src="/img/AakashBadole-logo.png" alt="Akash Badole Portfolio"  width={100} height={61} />
+                  </Link>
                   <h4>Follow Me</h4>
                 </div>
                 <div className="footer_social">

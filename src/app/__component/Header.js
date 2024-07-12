@@ -1,13 +1,20 @@
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 const Header = () => {
+  const pathname = usePathname();
+  
   return (
     <>
       <header className="header_area">
         <div className="main_menu">
           <nav className="navbar navbar-expand-lg navbar-light">
             <div className="container">
-              <a className="navbar-brand logo_h" href="index.html">
-                <img src="img/logo.png" alt="" />
-              </a>
+              <Link className="navbar-brand logo_h" href="/">
+                <Image src="/img/AakashBadole-logo.png" alt="Akash Badole Portfolio"  width={100} height={61} />
+              </Link>
               <button
                 className="navbar-toggler"
                 type="button"
@@ -26,78 +33,60 @@ const Header = () => {
                 id="navbarSupportedContent"
               >
                 <ul className="nav navbar-nav menu_nav justify-content-end">
-                  <li className="nav-item active">
-                    <a className="nav-link" href="index.html">
+                  <li
+                    className={
+                      pathname === "/" ? "nav-item active" : "nav-item"
+                    }
+                  >
+                    <Link className="nav-link" href="/">
                       Home
-                    </a>
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="about.html">
+                  <li
+                    className={
+                      pathname === "/About" ? "nav-item active" : "nav-item"
+                    }
+                  >
+                    <Link className="nav-link" href="/About">
                       About
-                    </a>
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="services.html">
+                  <li
+                    className={
+                      pathname === "/Services" ? "nav-item active" : "nav-item"
+                    }
+                  >
+                    <Link className="nav-link" href="/Services">
                       Services
-                    </a>
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="portfolio.html">
+                  <li
+                    className={
+                      pathname === "/Portfolio" ? "nav-item active" : "nav-item"
+                    }
+                  >
+                    <Link className="nav-link" href="/Portfolio">
                       Portfolio
-                    </a>
+                    </Link>
                   </li>
-                  <li className="nav-item submenu dropdown">
-                    <a
-                      href="#"
-                      className="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Pages
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <a className="nav-link" href="elements.html">
-                          Elements
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="portfolio-details.html">
-                          Portfolio Details
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item submenu dropdown">
-                    <a
-                      href="#"
-                      className="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
+
+                  <li
+                    className={
+                      pathname === "/Blog" ? "nav-item active" : "nav-item"
+                    }
+                  >
+                    <Link className="nav-link" href="/Blog">
                       Blog
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <a className="nav-link" href="blog.html">
-                          Blog
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="single-blog.html">
-                          Blog Details
-                        </a>
-                      </li>
-                    </ul>
+                    </Link>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="contact.html">
+                  <li
+                    className={
+                      pathname === "/Contact" ? "nav-item active" : "nav-item"
+                    }
+                  >
+                    <Link className="nav-link" href="/Contact">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

@@ -1,4 +1,9 @@
 const Banner = () => {
+
+  // const styles = {
+
+  // }
+
   return (
     <>
       <section className="home_banner_area">
@@ -22,7 +27,7 @@ const Banner = () => {
               </div>
               <div className="col-lg-5">
                 <div className="home_right_img">
-                  <img className="" src="img/banner/home-right.png" alt="" />
+                  <img className="" src="img/banner/home-right.png" alt="" width={"80%"} />
                 </div>
               </div>
             </div>
