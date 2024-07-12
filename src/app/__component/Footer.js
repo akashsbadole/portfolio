@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebookF, FaTwitter, FaDribbble, FaBehance } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -16,18 +17,18 @@ const Footer = () => {
                   <h4>Follow Me</h4>
                 </div>
                 <div className="footer_social">
-                  <a href="#">
-                    <i className="fa fa-facebook"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fa fa-twitter"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fa fa-dribbble"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fa fa-behance"></i>
-                  </a>
+                  <Link href="#">
+                   <FaFacebookF />
+                  </Link>
+                  <Link href="#">
+                    <FaTwitter />
+                  </Link>
+                  <Link href="#">
+                    <FaDribbble />
+                  </Link>
+                  <Link href="#">
+                    <FaBehance />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -38,9 +39,9 @@ const Footer = () => {
               {new Date().getFullYear()  } All
               rights reserved | This template is made with{" "}
               <i className="fa fa-heart-o" aria-hidden="true"></i> by{" "}
-              <a href="https://colorlib.com" target="_blank">
+              <Link href="https://colorlib.com" target="_blank">
                 Colorlib
-              </a>
+              </Link>
             </p>
           </div>
         </div>

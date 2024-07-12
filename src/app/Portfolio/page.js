@@ -1,12 +1,14 @@
 import Header from "../__component/Header"
 import Footer from "../__component/Footer"
+import { Breadcumb } from "../__component/Breadcumb"
+
 const page = () => {
   return (
-    <div>
+    <>
     <Header />
-    Portfolio
+    <Breadcumb name="Portfolio" url="/Portfolio" urlName="Portfolio" />
     <Footer />
-    </div>
+    </>
   )
 }
 

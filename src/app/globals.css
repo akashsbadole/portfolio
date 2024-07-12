@@ -71,11 +71,11 @@ button:focus {
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 .section_gap {
-  padding: 20px 0;
+  padding: 60px 0;
 }
 @media (max-width: 1199px) {
   .section_gap {
-    padding: 20px 0;
+    padding: 60px 0;
   }
 }
 
@@ -446,6 +446,9 @@ button:focus {
 .home_banner_area .banner_inner .banner_content {
   text-align: left;
 }
+.banner_content a{
+  text-decoration: none;
+}
 @media (max-width: 991px) {
   .home_banner_area .banner_inner .banner_content {
     margin-top: 150px;
@@ -497,18 +500,18 @@ button:focus {
 .banner_area {
   position: relative;
   z-index: 1;
-  min-height: 485px;
+  min-height: 220px;
 }
 @media (max-width: 1199px) {
   .banner_area {
-    min-height: 350px;
+    min-height: 150px;
   }
 }
 .banner_area .banner_inner {
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: 485px;
+  min-height: 220px;
   background: url(/img/banner/common-banner.png) no-repeat right bottom;
   background-size: 90% 85%;
   width: 98%;
@@ -516,7 +519,7 @@ button:focus {
 }
 @media (max-width: 1199px) {
   .banner_area .banner_inner {
-    min-height: 350px;
+    min-height: 150px;
   }
 }
 @media (max-width: 991px) {
